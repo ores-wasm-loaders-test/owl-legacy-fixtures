@@ -1,0 +1,38 @@
+[package]
+org = "ores-wasm-loaders-test"
+name = "owl-fixtures"
+version = "0.1.0"
+kind = "clients"
+language = "typescript"
+description = "ORES Wasm Loaders: synthetic but structurally faithful build outputs — a Flutter web release, a Leptos islands release and a Dioxus route-chunk release — with their manifests, plus a marketing shell that prepares them"
+license = "MIT"
+
+[package.repository]
+vcs = "git"
+url = "https://github.com/ores-wasm-loaders-test/owl-fixtures"
+
+[dependencies]
+"ores-wasm-loaders/owl-interfaces" = "^0.1.0"
+
+[build]
+command = "node tools/build-fixtures.mjs && node --test test/*.test.mjs"
+
+[publish]
+include_readme = true
+tag_format = "v{version}"
+exclude = [".env", ".env.*", ".vendor/**", ".zed/**", ".zed-pack/**", "tmp/**", "**/*.log", ".DS_Store", "**/target/**", "**/node_modules/**", "**/dist/**"]
+
+[install]
+dir = ".vendor/.zed"
+
+[targets.repository]
+dir = "."
+
+[targets.typescript]
+dir = "."
+name = "owl-fixtures"
+adapter = "node"
+
+[scripts]
+test = "node tools/build-fixtures.mjs && node --test test/*.test.mjs"
+build = "node tools/build-fixtures.mjs"

@@ -1,0 +1,11 @@
+{
+  "name": "@ores-wasm-loaders-test/owl-fixtures",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "test": "node tools/build-fixtures.mjs && node --test test/*.test.mjs",
+    "build": "node tools/build-fixtures.mjs"
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "appId": "owl-fixture-flutter",
+    "releaseId": "2026.09.05-f1a2b3c",
+    "framework": "flutter",
+    "manifest": "/releases/owl-fixture-flutter/2026.09.05-f1a2b3c/owl-manifest.json"
+  },
+  {
+    "appId": "owl-fixture-leptos",
+    "releaseId": "2026.09.05-9d8e7f6",
+    "framework": "leptos",
+    "manifest": "/releases/owl-fixture-leptos/2026.09.05-9d8e7f6/owl-manifest.json"
+  },
+  {
+    "appId": "owl-fixture-dioxus",
+    "releaseId": "2026.09.05-4c5d6e7",
+    "framework": "dioxus",
+    "manifest": "/releases/owl-fixture-dioxus/2026.09.05-4c5d6e7/owl-manifest.json"
+  }
+]
